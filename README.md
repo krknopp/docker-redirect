@@ -7,10 +7,10 @@ Insanely fast and small! Based on alpine and nginx.
 ## Launching
 
 ```bash
-docker run -d -e REDIRECT="https://www.google.com/" -p 8080:80 cusspvz/redirect
+docker run -d -e REDIRECT="https://www.google.com/" -expose 80 codekoalas/redirect
 ```
 
-Now you should be able to browse to `http://localhost:8080/any/path` and 
+Now you should be able to browse to `http://localhost/any/path` and 
 have your browser redirected to `https://www.google.com/any/path`.
 
 ## Environment variables
